@@ -3,35 +3,35 @@ import './trabajos.css';
 export const projects = [
     {
         title: "Proyecto 1",
-        image: "ruta/a/la/imagen1.jpg",
+        image: "../../public/1.webp",
         description: "Descripción del Proyecto 1",
         localización: "Ubicación del Proyecto 1",
         tareas: "Tareas del Proyecto 1"
     },
     {
         title: "Proyecto 2",
-        image: "ruta/a/la/imagen2.jpg",
+        image: "../../public/2.webp",
         description: "Descripción del Proyecto 2",
         localización: "Ubicación del Proyecto 2",
         tareas: "Tareas del Proyecto 2"
     },
     {
         title: "Proyecto 2",
-        image: "ruta/a/la/imagen2.jpg",
+        image: "../../public/3.webp",
+        description: "Descripción del Proyecto 2",
+        localización: "Ubicación del Proyecto 2",
+        tareas: "Tareas del Proyecto 2"
+    },
+    {
+        title: "proyecto 3",
+        image: "../../public/4.webp",
         description: "Descripción del Proyecto 2",
         localización: "Ubicación del Proyecto 2",
         tareas: "Tareas del Proyecto 2"
     },
     {
         title: "Proyecto 2",
-        image: "ruta/a/la/imagen2.jpg",
-        description: "Descripción del Proyecto 2",
-        localización: "Ubicación del Proyecto 2",
-        tareas: "Tareas del Proyecto 2"
-    },
-    {
-        title: "Proyecto 2",
-        image: "ruta/a/la/imagen2.jpg",
+        image: "../../public/5.webp",
         description: "Descripción del Proyecto 2",
         localización: "Ubicación del Proyecto 2",
         tareas: "Tareas del Proyecto 2"
