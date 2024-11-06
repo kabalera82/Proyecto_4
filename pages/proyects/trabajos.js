@@ -3,7 +3,7 @@ import './trabajos.css';
 export const projects = [
     {
         title: "Proyecto 1",
-        image: "../../public/1.webp",
+        image: "../../public/1.jpg",
         description: "Descripción del Proyecto 1",
         localización: "Ubicación del Proyecto 1",
         tareas: "Tareas del Proyecto 1"
