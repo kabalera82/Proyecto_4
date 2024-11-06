@@ -1,0 +1,65 @@
+import './trabajos.css';
+
+export const projects = [
+    {
+        title: "Proyecto 1",
+        image: "ruta/a/la/imagen1.jpg",
+        description: "Descripción del Proyecto 1",
+        localización: "Ubicación del Proyecto 1",
+        tareas: "Tareas del Proyecto 1"
+    },
+    {
+        title: "Proyecto 2",
+        image: "ruta/a/la/imagen2.jpg",
+        description: "Descripción del Proyecto 2",
+        localización: "Ubicación del Proyecto 2",
+        tareas: "Tareas del Proyecto 2"
+    },
+    {
+        title: "Proyecto 2",
+        image: "ruta/a/la/imagen2.jpg",
+        description: "Descripción del Proyecto 2",
+        localización: "Ubicación del Proyecto 2",
+        tareas: "Tareas del Proyecto 2"
+    },
+    {
+        title: "Proyecto 2",
+        image: "ruta/a/la/imagen2.jpg",
+        description: "Descripción del Proyecto 2",
+        localización: "Ubicación del Proyecto 2",
+        tareas: "Tareas del Proyecto 2"
+    },
+    {
+        title: "Proyecto 2",
+        image: "ruta/a/la/imagen2.jpg",
+        description: "Descripción del Proyecto 2",
+        localización: "Ubicación del Proyecto 2",
+        tareas: "Tareas del Proyecto 2"
+    }
+    // Agrega más proyectos según sea necesario
+];
+
+
+export const AddProjects = () => {
+    const header = document.querySelector("main");
+    const main = document.createElement("article");
+    main.id = "faenas"; 
+
+    // Iterar sobre el array de proyectos y crear elementos HTML
+    projects.forEach(project => {
+        const projectElement = document.createElement("div");
+        projectElement.classList.add("project");
+
+        projectElement.innerHTML = `
+            <h2>${project.title}</h2>
+            <img src="${project.image}" alt="${project.title}">
+            <p>${project.description}</p>
+            <p><strong>Localización:</strong> ${project.localización}</p>
+            <p><strong>Tareas:</strong> ${project.tareas}</p>
+        `;
+
+        main.appendChild(projectElement);
+    });
+
+    header.appendChild(main);
+};

@@ -1,0 +1,40 @@
+:root {
+  --primero-dinamic: ;
+  --segundo-dinamic: ;
+  --tercero-dinamic: ;
+  --cuarto-dinamic: ;
+  --quinto-dinamic: ;
+  --color: ;
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  color: inherit;
+ 
+ }
+ body{
+  width: 100vw;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+ }
+
+ #colores{
+  color:#65DEF1
+        #A8DCD1
+        #EBE971
+        #F96900
+        #F17F29
+        #F5007A
+        #C11C7A
+        #B6646E
+        #5C3E4F
+        #3B0414
+ }

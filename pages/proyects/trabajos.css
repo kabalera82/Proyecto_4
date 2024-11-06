@@ -1,0 +1,25 @@
+
+
+#faenas {
+    margin: 25px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px; /* Espacio entre los contenedores de proyectos */
+}
+
+.project {
+    width: 300px;
+    height: 300px;
+    overflow: hidden; /* Ocultar cualquier contenido que se desborde */
+    border: 1px solid #ccc; /* Opcional: Añadir un borde para visualizar mejor el contenedor */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.project img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ajustar la imagen para cubrir el contenedor sin distorsión */
+}

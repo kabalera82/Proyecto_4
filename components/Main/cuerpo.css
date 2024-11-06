@@ -1,0 +1,32 @@
+main {
+    display: flex;
+    flex-direction: column;
+    width: 100%; /* AJUSTAR */
+    height: 30%; /* AJUSTAR */
+    top: 0;
+    left: 0;
+    align-items: center;
+    justify-content: center;
+
+}
+
+#fondo {
+    position: fixed;
+    z-index: -2;
+    height: 100vh;
+    width: 100vw;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#fondo img {
+    object-fit: cover;
+    width: 100%; /* Ajusta el ancho de la imagen para que ocupe todo el contenedor */
+    height: 100%; /* Ajusta la altura de la imagen para que ocupe todo el contenedor */
+    background-attachment: fixed;
+
+}

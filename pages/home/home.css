@@ -1,0 +1,48 @@
+
+
+#principal{
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    justify-items: center;
+    width: 100vw;
+    height: 60vh;
+    margin-top:-25vh;
+    background-color: rgba(202, 202, 183, 0.171);
+
+}
+
+h1{
+    color: var(--primero-dinamic);
+    font-size: 30px;
+    margin: 5vw;
+    border-radius:15px;;
+}
+
+
+#saludo{
+    color: var(--primero-dinamic);
+    font-size: 17px;
+    font-weight: bold;
+    margin: 10px;
+    
+}
+
+#contacto {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+    height: 40px;
+    border-radius: 15px;
+    color: var(--primero-dinamic);
+    background: var(--cuarto-dinamic);
+    margin: 10px 0 -15px 0;
+}
+
+#contacto:hover{
+    background: var(--primero-dinamic);
+    color: var(--cuarto-dinamic);
+    transition: 0.3s;
+}
+
