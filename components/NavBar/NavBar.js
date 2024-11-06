@@ -6,7 +6,7 @@ export const AddNavBar = () => {
     header.innerHTML = `
     <nav>
         <button id="botonMenu" aria-expanded="false" aria-controls="menu">
-            <img src="../../public/GontaruLogo.png" alt="Menu Icon">
+            <img src="https://proyecto-4-sable.vercel.app/public/ReformasGontaru.webp" alt="Menu Icon">
         </button>  
         <ul id="menu" hidden>
             <li class="desplegable"><a href="#">Inicio</a></li>
