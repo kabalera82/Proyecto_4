@@ -1,10 +1,14 @@
 
 
 #faenas {
+   
     margin: 25px;
     display: flex;
     flex-wrap: wrap;
     gap: 10px; /* Espacio entre los contenedores de proyectos */
+}
+header{
+    margin-top: 30vh;
 }
 
 .project {
