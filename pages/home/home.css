@@ -7,12 +7,14 @@
     justify-items: center;
     width: 100vw;
     height: 60vh;
-    margin:auto;
+    margin-top:auto;
     background-color: rgba(202, 202, 183, 0.171);
+
 
 }
 
 h1{
+    margin: 10vh;
     color: var(--primero-dinamic);
     font-size: 30px;
     margin: 5vw;

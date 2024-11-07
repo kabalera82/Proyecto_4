@@ -4,7 +4,7 @@ import { AddFooter } from './components/Footer/Foot.js';
 import { AddCuerpo } from './components/Main/cuerpo.js';
 import { AddHome } from './pages/home/home.js';
 import { AddProjects } from './pages/proyects/trabajos.js';
-import { projects } from './pages/proyects/trabajos.js';
+
 
 AddNavBar();
 AddCuerpo();
@@ -12,7 +12,23 @@ AddFooter();
 AddHome();
 AddProjects();
 
+function getRandomColor() {
+    const letters = '0123456789ABCDEF';
+    let color = '#';
+    for (let i = 0; i < 6; i++) {
+        color += letters[Math.floor(Math.random() * 16)]; // Math.random() devuelve un número aleatorio entre 0 y 1 y Math.floor() redondea hacia abajo
+    }
+    return color;
+}
 
+const styleAleatori = {
+    '--primero-dinamic': getRandomColor(),
+    '--segundo-dinamic': getRandomColor(),
+    '--tercero-dinamic': getRandomColor(),
+    '--cuarto-dinamic': getRandomColor(),
+    '--quinto-dinamic': getRandomColor(),
+    '--color': getRandomColor()
+};
 
 const styleLight = {
     '--primero-dinamic': '#65DEF1',
@@ -43,9 +59,12 @@ document.addEventListener('DOMContentLoaded', function() {
         if (botonStilo.innerText === "☀️") {
             botonStilo.innerText = "🌒";
             applyStyles(styleLight);
-        } else {
-            botonStilo.innerText = "☀️";
+        } else if (botonStilo.innerText === "🌒") {
+            botonStilo.innerText = "🤯";
             applyStyles(styleDark);
+        } else {(botonStilo.innerText === "🤯")
+            botonStilo.innerText = "☀️";
+            applyStyles(styleAleatori);
         }
     });
 });

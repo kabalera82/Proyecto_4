@@ -26,7 +26,7 @@ export const AddNavBar = () => {
         const isExpanded = botonMenu.getAttribute('aria-expanded') === 'true'; // aria-expanded es un string que puede ser 'true' o 'false' (no un booleano)
 
         // Alternar el valor de aria-expanded
-        botonMenu.setAttribute('aria-expanded', !isExpanded ? 'true' : 'false');
+        botonMenu.setAttribute('aria-expanded', !isExpanded ? 'true' : 'false'); //
         
         // Alternar la visibilidad del menú
         menu.hidden = isExpanded;
