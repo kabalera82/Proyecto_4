@@ -7,17 +7,18 @@
     justify-items: center;
     width: 100vw;
     height: 60vh;
-    margin-top:auto;
+    margin-top: 12vh;
+    margin-bottom: 10vh;
     background-color: rgba(202, 202, 183, 0.171);
 
 
 }
 
 h1{
-    margin: 10vh;
+    margin: 5vh;
     color: var(--primero-dinamic);
     font-size: 30px;
-    margin: 5vw;
+    margin-bottom: 5vh;
     border-radius:15px;;
 }
 
@@ -27,6 +28,8 @@ h1{
     font-size: 17px;
     font-weight: bold;
     margin: 10px;
+    margin-bottom: 10vh;
+    margin-top: 5vh;
     
 }
 
@@ -39,7 +42,8 @@ h1{
     border-radius: 15px;
     color: var(--primero-dinamic);
     background: var(--cuarto-dinamic);
-    margin: 10px 0 -15px 0;
+    margin: 5vh 0 5vh 0;
+
 }
 
 #contacto:hover{

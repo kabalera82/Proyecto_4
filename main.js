@@ -12,23 +12,39 @@ AddFooter();
 AddHome();
 AddProjects();
 
+/*
+Función getRandomColor
+    Definir una cadena de caracteres 'letters' que contiene '0123456789ABCDEF'
+    Inicializar una variable 'color' con el valor '#'
+    
+    Para i desde 0 hasta 5 hacer
+        Seleccionar un carácter aleatorio de 'letters' para formar el numero hexadecimal
+        Añadir el carácter seleccionado a 'color'
+    Fin Para
+    
+    Retornar 'color'
+Fin Función
+*/
+
 function getRandomColor() {
     const letters = '0123456789ABCDEF';
     let color = '#';
     for (let i = 0; i < 6; i++) {
-        color += letters[Math.floor(Math.random() * 16)]; // Math.random() devuelve un número aleatorio entre 0 y 1 y Math.floor() redondea hacia abajo
+        color += letters[Math.floor(Math.random() * 16)]; 
     }
     return color;
 }
 
-const styleAleatori = {
-    '--primero-dinamic': getRandomColor(),
-    '--segundo-dinamic': getRandomColor(),
-    '--tercero-dinamic': getRandomColor(),
-    '--cuarto-dinamic': getRandomColor(),
-    '--quinto-dinamic': getRandomColor(),
-    '--color': getRandomColor()
-};
+function generateRandomStyles() {
+    return {
+        '--primero-dinamic': getRandomColor(),
+        '--segundo-dinamic': getRandomColor(),
+        '--tercero-dinamic': getRandomColor(),
+        '--cuarto-dinamic': getRandomColor(),
+        '--quinto-dinamic': getRandomColor(),
+        '--color': getRandomColor()
+    };
+}
 
 const styleLight = {
     '--primero-dinamic': '#65DEF1',
@@ -49,7 +65,7 @@ const styleDark = {
 };
 
 document.addEventListener('DOMContentLoaded', function() {
-    // Aplicar los estilos iniciales al cargar la página
+    
     applyStyles(styleLight);
 
     document.getElementById('botonStilo').addEventListener('click', function() {
@@ -60,18 +76,17 @@ document.addEventListener('DOMContentLoaded', function() {
             botonStilo.innerText = "🌒";
             applyStyles(styleLight);
         } else if (botonStilo.innerText === "🌒") {
-            botonStilo.innerText = "🤯";
+            botonStilo.innerText = "🎲";
             applyStyles(styleDark);
-        } else {(botonStilo.innerText === "🤯")
+        } else {(botonStilo.innerText === "🎲")
             botonStilo.innerText = "☀️";
-            applyStyles(styleAleatori);
+            applyStyles(generateRandomStyles());
         }
     });
 });
 
 function applyStyles(styles) {
-    for (const property in styles) { // Recorrer todas las propiedades del objeto styles y aplicarlas al documento HTML
-        document.documentElement.style.setProperty(property, styles[property]); 
-        /* document.documentElement es el documento HTML y setProperty es un método que permite cambiar el valor de una propiedad CSS*/
+    for (const property in styles) { 
+        document.documentElement.style.setProperty(property, styles[property]);        
     }
 }

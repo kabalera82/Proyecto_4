@@ -5,7 +5,8 @@
     flex-wrap: wrap;
     width: 100%;
     height: auto;
-    margin-top: auto;
+    margin-top: 40vh;
+    margin-bottom: 25vh;
     justify-content: center;
     gap: 50px;
 }

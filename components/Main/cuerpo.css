@@ -1,8 +1,8 @@
 main {
     display: flex;
     flex-direction: column;
-    width: 100%; /* AJUSTAR */
-    height: 30%; /* AJUSTAR */
+    width: 100%; 
+    height: auto;
     top: 0;
     left: 0;
     align-items: center;
